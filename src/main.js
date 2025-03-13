@@ -1,43 +1,14 @@
-import showGallary from './js/pixabay-api';
-import { hideLoader, showLoader, showMessage, galleryAllTemplate } from './js/render-functions';
+// import Swiper styles
+import 'swiper/css';
+// import Accordion styles
+import 'accordion-js/dist/accordion.min.css';
 
-const refs = {
-  form: document.querySelector('form'),
-  input: document.querySelector('#search-text')
-}
-
-
-refs.form.addEventListener('submit', getBeautifulPictures);
-
-
-function getBeautifulPictures(e) {
-  e.preventDefault();
-  const searchText = refs.input.value;
-
-  if (!searchText.trim()) {
-    showMessage();
-    hideLoader();
-    return;
-  }
-
-  refs.input.value = '';  
-  showLoader();
-
-  showGallary(searchText)
-    .then(res => renderResults(res.data.hits))
-    .catch( (error) => { 
-      hideLoader();
-      showMessage();
-      console.log(error);
-    });
-}
-
-function renderResults(images) {
-  if (!images.length) {
-    hideLoader();
-    showMessage();
-  }
-
-  galleryAllTemplate(images);
-}
-
+import './js/theme/theme';
+import './js/header/header';
+import './js/about/about';
+import './js/about/skills';
+import './js/projects/projects';
+import './js/faq/faq';
+import './js/covers/covers';
+import './js/reviews/reviews';
+import './js/footer/footer';

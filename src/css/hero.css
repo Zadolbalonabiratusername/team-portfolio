@@ -1,0 +1,144 @@
+.hero {
+  background-image: url(../img/hero/hero-desc-min.webp);
+  background-position: -240px 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 812px;
+  margin: 0 auto;
+}
+
+@media screen and (min-resolution: 192dpi) {
+  .hero {
+    background-image: url(../img/hero/hero-desc-x2-min.webp);
+  }
+}
+
+.hero-position {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 812px;
+  padding-bottom: 32px;
+  padding-top: 281px;
+}
+
+.hero-title {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--text-color-white);
+}
+
+span {
+  display: block;
+}
+
+.hero-socials {
+  display: flex;
+  gap: 4px;
+}
+
+.hero-social-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 60px;
+  padding: 10px 8px;
+  width: 37px;
+  height: 37px;
+
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: var(--text-color-white);
+}
+
+.link {
+  display: inline-block;
+  text-align: center;
+  padding: 10px 8px;
+}
+
+.hero-contacts {
+  min-width: 178px;
+}
+
+@media only screen and (max-width: 374px) {
+  .hero-social-item {
+    width: 30px;
+    height: 30px;
+    font-size: 10px;
+  }
+
+  .hero-contacts {
+    min-width: 140px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    height: 1024px;
+  }
+
+  .hero-position {
+    height: 1024px;
+    width: 704px;
+    padding-top: 300px;
+  }
+
+  .hero-title {
+    width: 620px;
+    font-size: 90px;
+  }
+
+  .hero-socials {
+    margin-left: auto;
+    gap: 8px;
+    width: 473px;
+    height: 55px;
+  }
+
+  .hero-social-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 18px 16px;
+    width: 55px;
+    height: 55px;
+    font-size: 16px;
+    transition: all 500ms ease-in-out;
+  }
+
+  .hero-social-item:hover,
+  .hero-social-item:focus {
+    border: 1px solid var(--text-color-white);
+  }
+
+  .hero-contacts {
+    min-width: 223px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero {
+    background-position: center;
+    height: 900px;
+  }
+
+  .hero-position {
+    width: 1376px;
+    height: 900px;
+  }
+
+  .hero-title {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1084px;
+    font-size: 90px;
+  }
+}

@@ -1,0 +1,151 @@
+/* Mobile 320 */
+
+.benefits-litle {
+  margin-bottom: 32px;
+}
+
+.right {
+  width: 288px;
+  height: 1215px;
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.benefit-item {
+  padding: 10px;
+  background: var(--bg-color-black);
+  width: 100%;
+}
+
+.benefit-icon {
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  background: var(--bg-color-accent);
+  padding: 12px;
+  margin-bottom: 64px;
+}
+
+.benefit-designation {
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  margin-bottom: 8px;
+}
+
+.benefit-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+}
+
+.benefits-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px;
+  border-radius: 60px;
+  width: 187px;
+  height: 55px;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: var(--text-color-white);
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.benefits-link:focus,
+.benefits-link:hover {
+  color: rgba(250, 250, 250, 0.6);
+  border: 1px solid rgba(250, 250, 250, 0.4);
+}
+
+/* Mobile 375 */
+@media screen and (min-width: 375px) {
+  .right {
+    width: 344px;
+  }
+
+  .benefit-item {
+    padding: 24px;
+  }
+
+  .benefit-designation {
+    font-size: 20px;
+  }
+
+  .benefit-text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 374px) {
+  .right {
+    height: 1060px;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) {
+  .right {
+    width: 704px;
+    height: 675px;
+  }
+
+  .benefits-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .benefit-item {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .benefit-item:nth-child(1) {
+    order: 2; /* Communication */
+  }
+
+  .benefit-item:nth-child(2) {
+    order: 3; /* Art */
+  }
+
+  .benefit-item:nth-child(3) {
+    order: 4; /* Urgent Execution */
+  }
+
+  .benefit-item:nth-child(4) {
+    order: 1; /* Expertise */
+  }
+
+  .benefits-link {
+    margin-top: 64px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .layout {
+    display: flex;
+    justify-content: space-between;
+  }
+  .left {
+    width: 284px;
+    height: 24px;
+  }
+
+  .benefits-litle {
+    margin-bottom: 0;
+  }
+
+  .right {
+    width: 680px;
+    height: 675px;
+  }
+}

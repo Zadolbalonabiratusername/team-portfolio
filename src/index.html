@@ -1,26 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="#ed3b44">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JS is Awesome (Homework 11)</title>
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    <load src="./partials/header.html" />
 
-    <h1>Welcome to the world of beautiful pictures</h1>
+    <main>
+      <load src="./partials/hero.html" />
+      <load src="./partials/about.html" />
+      <load src="./partials/benefits.html" />
+      <load src="./partials/projects.html" />
+      <load src="./partials/faq.html" />
+      <load src="./partials/covers.html" />
+      <load src="./partials/reviews.html" />
+    </main>
 
-    <form>
-      <input type="text"  
-        name="search-text"
-        id="search-text"
-        placeholder="Search images...">
-      <button type="submit" class="find-mi">Search</button>
-    </form>
+    <load src="./partials/modal.html" />
+    <load src="./partials/theme.html" />
 
-    <p class="loader-container hidden"><span class="loader"></span></p>
-    <ul class="gallery"></ul>
+    <load src="./partials/footer.html" />
 
     <script type="module" src="./main.js"></script>
   </body>

@@ -1,0 +1,271 @@
+/* Mobile */
+.about {
+  padding-top: 64px;
+}
+
+.about-text-container {
+  background: #242527;
+  border-radius: 24px;
+  height: 500px;
+  margin-bottom: 16px;
+}
+
+.about-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 117%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #fafafa;
+  padding: 32px;
+}
+
+.paragraph-small {
+  padding-bottom: 10px;
+}
+
+.red {
+  color: var(--bg-color-accent);
+  display: inline;
+}
+
+.grey {
+  color: rgba(250, 250, 250, 0.4);
+  display: inline;
+}
+
+.about-picture-container {
+  margin-top: 16px;
+  padding-bottom: 32px;
+}
+
+.image-about {
+  border-radius: 24px;
+  width: 100%;
+  max-width: 343px;
+}
+
+.about-description-list {
+  margin-top: 32px;
+}
+
+.about-item {
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.about-title {
+  margin-top: 20px;
+  margin-bottom: 12px;
+  width: 100%;
+  height: 36px;
+  cursor: pointer;
+  position: relative;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+
+.about-title:hover,
+.about-title:focus {
+  color: #fafafa;
+  /* text-decoration: underline; */
+  transition: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.about-arrow {
+  position: absolute;
+  right: 0;
+  width: 34px;
+  height: 34px;
+  padding: 7px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 50%;
+  transform: rotateX(0);
+  transition: transform 0.5s ease-in-out;
+}
+
+.is-active .about-arrow {
+  transform: rotateX(180deg);
+}
+
+.about-description {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  overflow: hidden;
+}
+
+.is-active .about-item {
+  margin-top: 12px;
+}
+
+.paragraph {
+  display: block;
+  margin-bottom: 32px;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .about-item {
+    padding-bottom: 32px;
+  }
+
+  .about-text {
+    padding: 64px;
+    font-size: 38px;
+    line-height: 105%;
+  }
+
+  .about-text-container {
+    width: 704px;
+    height: 700px;
+  }
+
+  .image-about {
+    max-width: 704px;
+  }
+}
+
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+  .about {
+    padding-top: 96px;
+  }
+
+  .about-text-container {
+    margin-bottom: 0;
+  }
+
+  .about-text-picture-container {
+    display: flex;
+    gap: 16px;
+  }
+
+  .about-text {
+    width: 100%;
+    max-width: 680px;
+    height: auto;
+  }
+
+  .about-picture-container {
+    width: 100%;
+    max-width: 680px;
+    margin: 0;
+  }
+
+  .image-about {
+    max-width: 680px;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .about-description-list {
+    margin-top: 96px;
+  }
+
+  .about-description {
+    width: 612px;
+    height: 320px;
+    position: relative;
+    left: 50%;
+  }
+}
+
+/* Skills */
+
+.skils {
+  margin-top: 32px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 200px 1fr;
+
+  @media only screen and (min-width: 375px) {
+    grid-template-columns: 260px 1fr;
+  }
+
+  @media only screen and (min-width: 768px) {
+    margin-top: 64px;
+    grid-template-columns: 600px 1fr;
+  }
+
+  @media only screen and (min-width: 1440px) {
+    width: 1312px;
+    margin: 96px auto 0;
+    grid-template-columns: 1200px 1fr;
+  }
+}
+
+.skils .swiper-skills {
+  overflow: hidden;
+  width: 100%;
+}
+
+.skill {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  color: var(--text-color-white);
+
+  @media only screen and (min-width: 375px) {
+    width: 130px;
+    height: 130px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+.swiper-slide-active .skill {
+  background-color: var(--bg-color-accent);
+  cursor: default;
+}
+
+.btn-switch-icon {
+  color: var(--bg-color-gray);
+
+  &:hover {
+    color: var(--text-color-main);
+  }
+}
+
+.skils .swiper-button-next {
+  position: absolute;
+  margin: 0;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+
+  @media only screen and (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.swiper-button-next::after {
+  display: none;
+}
+
+.btn-switch-icon {
+  width: 100%;
+  height: 100%;
+}

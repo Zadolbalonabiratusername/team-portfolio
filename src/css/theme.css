@@ -1,0 +1,66 @@
+:root {
+  --text-color-title: rgba(250, 250, 250, 0.4);
+  --text-color-main: rgba(255, 255, 255, 0.6);
+  --text-color-white: #fafafa;
+  --text-color-accent: #ed3b44;
+
+  --bg-color-main: #1c1d20;
+  --bg-color-black: #242527;
+  --bg-color-gray: #3b3b3b;
+  --bg-color-accent: #ed3b44;
+  --bg-color-accent-hover: #e0373f;
+}
+
+[data-theme='#ed3b44'] {
+  --text-color-accent: #ed3b44;
+  --bg-color-accent: #ed3b44;
+  --bg-color-accent-hover: #e0373f;
+
+  .hero,
+  .mobile-menu {
+    background-image: url(../img/hero/hero-desc-min.webp);
+  }
+
+  @media screen and (min-resolution: 192dpi) {
+    .hero,
+    .mobile-menu {
+      background-image: url(../img/hero/hero-desc-x2-min.webp);
+    }
+  }
+}
+
+[data-theme='#ff7f08'] {
+  --text-color-accent: #ff7f08;
+  --bg-color-accent: #ff7f08;
+  --bg-color-accent-hover: #f27b03;
+
+  .hero,
+  .mobile-menu {
+    background-image: url(../img/hero/hero-desc-min-orange.webp);
+  }
+
+  @media screen and (min-resolution: 192dpi) {
+    .hero,
+    .mobile-menu {
+      background-image: url(../img/hero/hero-desc-x2-min-orange.webp);
+    }
+  }
+}
+
+[data-theme='#0041e8'] {
+  --text-color-accent: #0041e8;
+  --bg-color-accent: #0041e8;
+  --bg-color-accent-hover: #0d45ed;
+
+  .hero,
+  .mobile-menu {
+    background-image: url(../img/hero/hero-desc-min-blue.webp);
+  }
+
+  @media screen and (min-resolution: 192dpi) {
+    .hero,
+    .mobile-menu {
+      background-image: url(../img/hero/hero-desc-x2-min-blue.webp);
+    }
+  }
+}

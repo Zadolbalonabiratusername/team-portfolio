@@ -1,0 +1,57 @@
+<footer class="footer" id="footer">
+  <div class="container">
+    <h2 class="footer-title">
+      <img
+        class="footer-face-image"
+        srcset="
+          /img/footer/img-face-2x.webp 2x,
+          /img/footer/img-face-1x.webp 1x
+        "
+        src="../img/footer/img-face-1x.webp"
+        alt="programmer's face"
+        height="44"
+        width="44"
+      />
+      Let’s <span class="footer-title-word">work</span> together
+    </h2>
+
+    <form class="footer-form" id="contact-form" action="#" method="POST">
+      <div class="input-message">
+        <input
+          class="footer-input-email"
+          type="email"
+          id="email-input"
+          name="email"
+          required
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          placeholder="clients@gmail.com"
+        />
+        <p class="email-succes">Succes!</p>
+        <p class="email-error">Invalid email, try again</p>
+      </div>
+      <input
+        class="footer-input-comments"
+        type="text"
+        id="text-input"
+        name="text"
+        required
+        placeholder="comments"
+      />
+      <button class="footer-button" type="submit">Send</button>
+    </form>
+    <address>
+      <ul class="footer-contact">
+        <li>
+          <a class="contact-mail" href="mailto:lloydjefferson@gmail.com"
+            >lloydjefferson@gmail.com</a
+          >
+        </li>
+        <li>
+          <a class="contact-tel" href="tel:+3801111111111"
+            >+380 11 1111 11 11</a
+          >
+        </li>
+      </ul>
+    </address>
+  </div>
+</footer>
